@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPAHOLICA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      background-color: beige;
+
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px; 
+      background: linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://img.freepik.com/free-photo/woman-black-trousers-purple-blouse-laughs-leaning-stand-with-elegant-clothes-pink-background_197531-17614.jpg?w=1060&t=st=1692620099~exp=1692620699~hmac=cc0be93e87e8cf2d29a94b327a062914d001b6c34fe40b5810149106178ed38f");       
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;  
+      transition: width 2s;
+      transition-duration:2s;
+      
+    }
+    
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 60px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 20px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 25px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(151, 148, 148);
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: black;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: black;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+    }
+
+    .testimonial {
+      padding-top: 100px;
+    }
+
+    .small-container {
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .row {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .testimonial .col-3 {
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.5s;
+    }
+
+    .col-3 {
+      flex-basis: 30%;
+      min-width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .fa.fa-quote-left {
+      font-size: 34px;
+      color: #ff523b;
+    }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .rating .fa {
+      color: #ff523b;
+    }
+
+    .testimonial .col-3 h3 {
+      font-weight: 600;
+      color: #555;
+      font-size: 16px;
+    }
+
+    .col-3 p {
+      font-size: 20px;
+      margin: 12px 0;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body style="background-color:beige;" >
+  <header class="header">
+    <a href="#" class="logo">Shopaholica</a>
+    <nav class="nav-items">
+      <a href="#"><b>Home</b></a>
+      <a href="contactus.html"><b>Contact</b></a>
+      <a href="signup.html"><b>sign up and login</b></a>
+      <a href="index.html"><b>features</b></a>
+
+
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Best online Store</h1>
+      <p>shopaholica is an online shopping store .</p>
+      <button>discover More</button>
+    </div>
+    <div class="achievements">
+      <h3><i>Most asked questions:</i> </h3>
+      <div class="work">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <p class="work-heading">can i change the item if it doesn't fiT me ?</p>
+        <p class="work-text">yes ofc you can . just contact us.</p>
+      </div>
+      <div class="work">
+        <i class="fa fa-truck" aria-hidden="true"></i>
+        <p class="work-heading">how longs does it takes to recieve the product?</p>
+        <p class="work-text">2 to 4 days.</p>
+      </div>
+      <div class="work">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <p class="work-heading">do you ship all over the world?</p>
+        <p class="work-text">unfortunatly for now we ship only to tunisia.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About us </h2>
+        <p>Shopaholica is a comprehensive online shopping destination that offers<br/> a wide range of clothes from various catogories catering to the<br/> neeeds and preference of a diverse customer base <br/>
+          the website is designed to provide a user-friendly shopping experience .</p>
+      </div>
+      <img
+     src=" https://st4.depositphotos.com/3881799/24269/i/1600/depositphotos_242698836-stock-photo-pink-colored-women-clothes.jpg" alt="me">
+    </div>
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+              Love Shopaholica. The prices are awesome. Have bought some beautiful blouses & t/shirts. Only returned 2
+              items &
+              that was shoes. There was nothing wrong with them but the heel height didn't suit. No problems returning
+              them & refund credited quickly. If you are a crafter, the prices & quality are brilliant. I wouldn't
+              hesitate to recommend Shein!!
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-1.png" alt="">
+            <h3>Sean Parker</h3>
+          </div>
+
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+              Clothes i have received have been good quality. only returned items once and that was cause didnt suit me
+              not cause there was anything wrong with items. have had multiple orders, love the points system to entice
+              you to make orders and get money off.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-2.png" alt="">
+            <h3>Michel Joe</h3>
+          </div>
+
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+
+            <p>
+              Best clothes store for online shopping, never had a wrong number or any clothes that weren't as shown on
+              the pictures. I have ordered more than 300 pieces.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-3.png" alt="">
+            <h3>Kaily Jenner</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="copy">&copy; 2023 Shopaholica</div>
+    <div class="bottom-links">
+      
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

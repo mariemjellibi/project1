@@ -1,0 +1,236 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    background-image: url("https://img.freepik.com/free-photo/stylish-lady-trench-hat-shyly-poses-beige-background-cute-girl-striped-sweater-beige-cloak-red-beret-jumps_197531-18668.jpg?w=1060&t=st=1692874166~exp=1692874766~hmac=91cbc2e091172546661515de0a4af291144f82b3af62ebddae74e4ed6d1dbbea");
+    font-family: 'Arial';
+}
+.login{
+        width: 900px;
+        overflow: hidden;
+        margin: auto;
+        margin: 10 0 0 300px;
+        padding: 40px;
+        /* background:rgb(242, 208, 195);  */
+        border-radius: 25px ;
+
+}
+h2{
+    text-align: center;
+    color: #277582;
+    padding: 30px;
+}
+label{
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    /* color: blue; */
+
+
+}
+span{
+    color: black;
+    font-size: 17px;
+}
+a{
+    float: right;
+    /* background-color: rgb(107, 106, 106); */
+}
+* {box-sizing: border-box}
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: lightslategray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+/* footer */
+.row {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer {
+    
+    color: #000;
+    font-size: 14px;
+    padding: 60px 0px 20px ;
+  }
+  .footer p {
+    color: #000;
+  }
+  .footer h3 {
+    color: grey;
+    margin-bottom: 5px;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    min-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col-1 {
+    flex-basis: 20px;
+  }
+  
+  .footer-col-2 {
+    flex: 1;
+    text-align: center;
+  }
+  .footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  .footer-col-3,
+  .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  /* Media Quer for menu */
+  
+  @media only screen and (max-width: 800px) {
+    .nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    .nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .nav ul li a {
+      color: #fff;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* background-color: #f5f5f5; */
+   }
+   .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    margin-right: 20px; 
+  }
+
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+  }
+  

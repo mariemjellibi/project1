@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="stylesignup.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="header">
+    
+        <nav class="nav-items">
+          <a href="homepage.html"><b>Home</b></a>
+          <a href="contactus.html"><b>Contact</b></a>
+          <a href="signup.html"><b>sign up and login</b></a>
+          <a href="index.html"><b>features</b></a>
+    
+    
+        </nav>
+      </header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="" width="125px" /></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <form id="login" method="get" action="login.php">
+            <h1 style="text-decoration: underline;">LOGIN</h1>
+            <label><b>User Name:</b></label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <br><br>
+
+            <label><b>Password:</b></label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+
+            <button type="button" class="loginbtn">login</button><br>
+            <input type="checkbox" id="check">
+            <span>Remember me</span>
+            <br><br>
+            Forgot <a href="#">Password</a>
+            <h1 style="text-decoration: underline;">Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password:</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" >Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer -->
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>
+                        Download App for Android <br />
+                        and ios mobile phone
+                    </p>
+
+                </div>
+                <div class="footer-col-2">
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+                        Porro, eum?
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright 2020 - introidx</p>
+        </div>
+    </div> -->
+    <!-- JS for Toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- 
+  js for toggle form -->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+
+</html>
